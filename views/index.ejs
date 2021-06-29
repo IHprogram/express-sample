@@ -8,10 +8,12 @@
 </head>
 <body>
   <div>
-    <h1>Express × bodyParserでフォームの値取得</h1>
-    <form>
+    <h1>フォームの値を取得、表示するアプリ(Express)</h1>
+    <form action="/" method="post">
+      <!-- ↓ フォームで入力した値が表示される -->
+      <p><%= content %></p>
       <input type="text" name="message" />
-      <button>送信</button>
+      <input type="submit" value="ボタン" />
     </form>
   </div>
 </body>
