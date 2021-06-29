@@ -12,6 +12,9 @@ app.engine('ejs', ejs.renderFile); // EJSの読み込みを行っている。
 // const bodyParser = require('body-parser');
 // app.use(bodyParser.urlencoded({ extended: false }))
 
+// bodyParserを使用せずに、inputタグの入力値を取得する。
+// また、express.urlencodedは、入力されたデータを文字列、または配列として認識するためのメソッド。
+// extendedオプションをtrueにすると、配列型のフォームデータを取得することができる。falseがデフォルト。
 app.use(express.urlencoded({ extended: false }))
 
 // トップページ
